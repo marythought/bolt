@@ -1,0 +1,31 @@
+<h1>Campaigns</h1>
+<p>
+  <a href="/campaigns/new" class="btn btn-primary">Create New Campaign</a>
+</p>
+
+<table class="table table-striped">
+  <thead>
+  
+    <th>Name</th>
+        
+    <th>Type</th>
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (campaign) in campaigns { %>
+      <tr>
+      
+        <td><%= campaign.Name %></td>
+                
+        <td><%= campaign.Type %></td>
+        <td>
+          <div class="pull-right">
+            <a href="/campaigns/<%= campaign.ID %>" class="btn btn-info">View</a>
+            <a href="/campaigns/<%= campaign.ID %>/edit" class="btn btn-warning">Edit</a>
+            <a href="/campaigns/<%= campaign.ID %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>

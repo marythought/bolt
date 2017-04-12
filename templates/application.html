@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= partial("shared/header.html") %>
+  </head>
+  <body>
+    <%= partial("shared/nav.html") %>
+
+
+    <div id="container">
+      <%= partial("shared/flash.html") %>
+
+      <%= yield %>
+    </div>
+
+    <footer></footer>
+    
+    <%= partial("shared/footer.html") %>
+  </body>
+</html>

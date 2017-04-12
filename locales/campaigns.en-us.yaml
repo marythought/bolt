@@ -1,0 +1,6 @@
+- id: "campaigns.created.success"
+  translation: "Campaign was successfully created."
+- id: "campaigns.updated.success"
+  translation: "Campaign was successfully updated."
+- id: "campaigns.destroyed.success"
+  translation: "Campaign was successfully destroyed."

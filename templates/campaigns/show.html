@@ -1,0 +1,14 @@
+<h1>Campaigns#Show</h1>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="/campaigns" class="btn btn-info">Back to all Campaigns</a></li>
+  <li><a href="/campaigns/<%= campaign.ID %>/edit" class="btn btn-warning">Edit</a></li>
+  <li><a href="/campaigns/<%= campaign.ID %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>Name</strong>: <%= campaign.Name %>
+</p>
+<p>
+  <strong>Type</strong>: <%= campaign.Type %>
+</p>
